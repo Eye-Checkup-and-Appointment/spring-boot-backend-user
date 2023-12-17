@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  eye_checkup_maven_backend:
+    image: eye_checkup_maven_backend:latest
+    ports:
+      - "8090:8090"
+    restart: always
+    build:
+      context: ./
+      dockerfile: Dockerfile
